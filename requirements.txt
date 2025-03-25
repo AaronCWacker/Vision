@@ -1,0 +1,66 @@
+# Core dependencies
+streamlit  # Build interactive web apps with Python! 🌐
+# - 🎥 Stream video: st.video("movie.mp4") to show a cool science clip!
+# - 📊 Plot data: st.line_chart(data) for visualizing AI model accuracy! 
+# - 🖼️ Show pics: st.image("cat.png", caption="AI-generated kitty!") for fun outputs!
+
+pandas  # Crunch data like a pro! 📈
+# - 🧮 Analyze scores: pd.DataFrame({"Student": ["Alex", "Bob"], "Score": [85, 90]}).mean() to avg grades!
+# - 📋 Filter rows: df[df["Age"] > 18] to find adult learners in a dataset!
+# - 🔄 Pivot tables: pd.pivot_table(df, values="Sales", index="Month") for sales trends!
+
+torch  # Power AI models with tensors! 🔥
+# - 🤖 Train a model: torch.nn.Linear(10, 2) for a simple neural net!
+# - 🧠 Matrix math: torch.matmul(tensor1, tensor2) to compute embeddings!
+# - 🎲 Random tensors: torch.rand(3, 3) for mock data in experiments!
+
+requests  # Fetch stuff from the web! 🌍
+# - 📚 Grab a PDF: requests.get("https://arxiv.org/pdf/2308.03892") to download research!
+# - 🌤️ Check weather: requests.get("api.weather.com/data") for live updates!
+# - 😂 Get jokes: requests.get("api.jokes.com/random") to lighten the mood!
+
+aiofiles  # Async file handling for speed! ⚡
+# - ✍️ Write fast: await aiofiles.open("log.txt", "w").write("Done!") for quick logs!
+# - 📖 Read async: await aiofiles.open("data.csv", "r").read() to load files snappy!
+# - 🗑️ Bulk ops: await aiofiles.open("temp.bin", "wb").write(data) for temp storage!
+
+pillow  # Play with images like an artist! 🖌️
+# - 🌈 Resize pics: Image.open("photo.jpg").resize((100, 100)) for thumbnails!
+# - 🎨 Color swap: Image.open("dog.png").convert("L") for grayscale pups!
+# - ✂️ Crop it: Image.open("scene.png").crop((10, 10, 50, 50)) to zoom in!
+
+# PDF processing
+PyMuPDF  # Master PDFs like a wizard! 📜
+# - 🖼️ PDF to pic: doc[0].get_pixmap().save("page1.png") for snapshots!
+# - 📝 Extract text: doc[0].get_text() to pull words from a page!
+# - 🔢 Count pages: len(fitz.open("book.pdf")) to know the length!
+
+# Transformers and diffusion models
+transformers  # Talk to AI models! 🗣️
+# - 🤖 Chatbot: tokenizer.decode(model.generate(input_ids)) for AI replies!
+# - 📝 Summarize: model("Long text here") to shorten essays!
+# - 🖋️ Translate: model("Hola", src_lang="es", tgt_lang="en") for "Hello"!
+
+diffusers  # Generate wild images! 🎨
+# - 🦄 Dream art: pipeline("Unicorn in space").images[0].save("magic.png")!
+# - 🌆 Style swap: pipeline("City in Van Gogh style") for cool remixes!
+# - 🐾 Pet pics: pipeline("Cartoon dog") to make fluffy cartoons!
+
+# OpenAI integration
+openai  # Tap into GPT magic! ✨
+# - 📜 Summarize: openai.ChatCompletion.create(messages=[{"role": "user", "content": "Summarize this!"}]) for quick recaps!
+# - 🖼️ Image OCR: openai.ChatCompletion.create(messages=[{"content": [{"type": "image_url", "image_url": "base64"}]}) for text extraction!
+# - 😂 Joke time: openai.ChatCompletion.create(messages=[{"content": "Tell me a joke!"}]) for laughs!
+
+# Additional utilities
+glob2  # Find files with flair! 🔍
+# - 🖼️ List pics: glob.glob("*.png") to grab all images!
+# - 📜 PDF hunt: glob.glob("*.pdf") for all your docs!
+# - 🗂️ Wildcards: glob.glob("data_*_2023.txt") for specific files!
+
+pytz  # Time zones made easy! ⏰
+# - 🌍 Local time: pytz.timezone("US/Pacific").localize(datetime.now()) for Cali time!
+# - ⏳ UTC shift: datetime.now(pytz.UTC) for global sync!
+# - 🕒 Convert: dt.astimezone(pytz.timezone("Asia/Tokyo")) for Tokyo vibes!
+
+tiktoken
